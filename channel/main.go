@@ -21,6 +21,7 @@ func main() {
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
+
 	close(ch)
 
 	for ch2 := range getIntChan() {
